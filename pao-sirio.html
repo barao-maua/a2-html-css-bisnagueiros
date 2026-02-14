@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita de Pão Sírio (Pita)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Variáveis de Cores e Fontes --- */
+        :root {
+            --cor-fundo-site: #f4ecd8; /* Cor creme suave */
+            --cor-fundo-conteudo: #fffbf2; /* Branco amarelado */
+            --cor-texto-principal: #4a3b32; /* Marrom café */
+            --cor-destaque: #c0392b; /* Vermelho queimado para títulos */
+            --fonte-titulos: 'Playfair Display', serif;
+            --fonte-texto: 'Roboto', sans-serif;
+        }
+
+        /* --- Reset Básico --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--cor-fundo-site);
+            font-family: var(--fonte-texto);
+            color: var(--cor-texto-principal);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* --- Container Principal --- */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto; /* Centraliza na tela */
+            background-color: var(--cor-fundo-conteudo);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra suave */
+            text-align: center;
+            border: 1px solid #e0d4c3;
+        }
+
+        /* --- Tipografia --- */
+        h1.titulo-principal {
+            font-family: var(--fonte-titulos);
+            color: var(--cor-destaque);
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2.titulo-secao {
+            font-family: var(--fonte-titulos);
+            color: var(--cor-destaque);
+            font-size: 2.5rem;
+            margin: 2.5rem 0 1.5rem 0;
+            border-bottom: 2px solid #e0d4c3;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h3.subtitulo-receita {
+            font-family: var(--fonte-titulos);
+            color: var(--cor-texto-principal);
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        p.intro-texto {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 3rem auto;
+            text-align: justify;
+        }
+
+        /* --- Galeria de Imagens --- */
+        .galeria-imagens {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 3rem;
+            flex-wrap: wrap; /* Permite que as imagens desçam em telas pequenas */
+        }
+
+        .img-pao {
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* Corta a imagem para caber no quadrado sem distorcer */
+            border-radius: 12px; /* Cantos arredondados suaves */
+            border: 3px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .img-pao:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente ao passar o mouse */
+        }
+
+        /* --- Área da Receita --- */
+        .receita-container {
+            text-align: left;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px dashed #d0c4b4; /* Borda pontilhada rústica */
+        }
+
+        .lista-receita {
+            list-style-position: inside;
+            font-size: 1.1rem;
+        }
+
+        .lista-receita li {
+            margin-bottom: 0.8rem;
+            padding-left: 1rem;
+        }
+
+        ol.lista-receita li {
+            margin-bottom: 1.2rem; /* Mais espaço entre os passos */
+        }
+
+        .bom-apetite {
+            font-family: var(--fonte-titulos);
+            color: var(--cor-destaque);
+            font-size: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* --- Responsividade para celulares --- */
+        @media (max-width: 600px) {
+            h1.titulo-principal { font-size: 2.5rem; }
+            .container { padding: 1.5rem; }
+            .img-pao { width: 100%; height: auto; max-height: 250px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="titulo-principal">Pão Sírio</h1>
+        
+        <div class="galeria-imagens">
+            <img src="paosirio1.jpg" alt="Pão Sírio assado" class="img-pao">
+            <img src="paosirio2.jpeg" alt="Pão Sírio aberto" class="img-pao">
+            <img src="paosirio3.jpg" alt="Pão Sírio na mesa" class="img-pao">
+        </div>
+
+        <p class="intro-texto">
+            O Pita, também conhecido como pão sírio ou pão árabe, é um pão de trigo tipo “envelope”. É um pão folha versátil que, quando assado em alta temperatura, estufa criando uma bolsa de ar, perfeita para ser recheada como um sanduíche. É extremamente popular em todo o Oriente Médio, Turquia e países vizinhos.
+        </p>
+
+        <div>
+            <h2 class="titulo-secao">RECEITA TRADICIONAL</h2>
+            
+            <div class="receita-container">
+                <h3 class="subtitulo-receita">Ingredientes:</h3>
+                <ul class="lista-receita">
+                    <li>500g de farinha de trigo (aprox. 4 xícaras)</li>
+                    <li>300ml de água morna</li>
+                    <li>10g de fermento biológico seco (1 sachê)</li>
+                    <li>1 colher (sopa) de açúcar</li>
+                    <li>1 colher (chá) de sal</li>
+                    <li>2 colheres (sopa) de azeite de oliva</li>
+                </ul>
+
+                <h3 class="subtitulo-receita">Modo de Preparo:</h3>
+                <ol class="lista-receita">
+                    <li><strong>Ativar o fermento:</strong> Em uma tigela pequena, misture o fermento, o açúcar e um pouco da água morna. Deixe descansar por 10 minutos até formar uma espuma.</li>
+                    <li><strong>Misturar a massa:</strong> Em uma tigela grande, misture a farinha e o sal. Faça um buraco no meio e adicione a mistura do fermento ativado, o azeite e o restante da água morna.</li>
+                    <li><strong>Sovar:</strong> Misture até formar uma massa. Transfira para uma bancada enfarinhada e sove por cerca de 10 minutos, até que a massa fique lisa e elástica.</li>
+                    <li><strong>Primeiro descanso:</strong> Coloque a massa em uma tigela untada com azeite, cubra com um pano úmido e deixe descansar em local morno por 1 hora (ou até dobrar de tamanho).</li>
+                    <li><strong>Modelar:</strong> Divida a massa em 8 a 10 bolinhas iguais. Abra cada uma com um rolo até formar discos finos (cerca de 0,5cm de espessura). Deixe os discos descansarem por mais 15 minutos cobertos.</li>
+                    <li><strong>Preparar o forno:</strong> Enquanto os discos descansam, pré-aqueça o forno na temperatura máxima (250°C ou mais). Coloque a assadeira vazia dentro do forno para que ela fique muito quente.</li>
+                    <li><strong>Assar:</strong> Coloque os discos de massa rapidamente sobre a assadeira super quente. Asse por 2 a 4 minutos. O choque térmico fará o pão estufar como um balão.</li>
+                    <li><strong>Finalizar:</strong> Retire do forno e cubra imediatamente com um pano de prato limpo e seco para abafar e mantê-los macios enquanto esfriam.</li>
+                </ol>
+            </div>
+            
+            <p class="bom-apetite">Bom apetite!</p>
+        </div>
+    </div>
+</body>
+</html>
